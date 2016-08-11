@@ -1,3 +1,10 @@
+/* equipe:
+	rodrigo oliveira
+	fernando calderaro
+	thailana neves
+	diogo abreu
+	leticia mota		*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
