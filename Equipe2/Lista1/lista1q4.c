@@ -1,3 +1,9 @@
+/*
+Equipe2
+Hermann Hernani
+Lucas Botinelly
+Stephanny Barreto
+*/
 #include<stdio.h>
 
 int main(){
