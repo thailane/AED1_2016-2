@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(void){
-	int *v
+	int *v;
 	int num;
 	int i, k, aux;
 
