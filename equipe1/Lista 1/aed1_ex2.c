@@ -30,8 +30,8 @@ int main()
 		{
 			if(n[j]>n[j+1])
 			{
-				temp = n[j];
-				n[j] = n[j+1];
+				temp = n[i];
+				n[i] = n[j+1];
 				n[j+1] = temp;
 			}
 		}
