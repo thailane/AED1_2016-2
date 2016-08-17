@@ -26,13 +26,13 @@ int main()
 	
 	for(i=0;i<4;i++)
 	{
-		for(j=1;j<4;j++)
+		for(j=i+1;j<5;j++)
 		{
-			if(n[j]>n[j+1])
+			if(n[i]>n[j])
 			{
 				temp = n[i];
-				n[i] = n[j+1];
-				n[j+1] = temp;
+				n[i] = n[j];
+				n[j] = temp;
 			}
 		}
 	}
