@@ -6,31 +6,57 @@ Stephanny Barreto
 */
 
 #include <stdio.h>
-#define MAX 100
+#include <stdlib.h>
 
-int main() 
-{ 
-	int n, i, j, conta[MAX], comp = 0; 
-	float seq[MAX];
+int main(int argc,char* argv[]){
 	
-	printf("Digite o tamanho da sequencia");
-	scanf("%d", &n);
+	int tamVet;
+	int i;
+	int j;
+	int posicaoCont = 0;
+	int contQuant;
+	int temNaLista = 1;//bool
+	//0 = false
+	//1 = true
 	
-	printf("Sequencia de %d numeros reais", n);	
-	for (i=0, i < n, i++) {
-		scanf("%f", &seq[comp]);
-		for (j=0, seq[j] != seq[comp], j++); 
-		
-		if(j==comp){
-			conta[comp]=1;
-			comp++;
+	printf("Informe o tamanho da lista: ");
+	scanf("%d", &tamVet);
+	
+	float numVet[tamVet];
+	float numNaoRepetidos[tamVet];
+	printf("\n");
+	for(i = 0; i < tamVet; i++){
+		printf("Elemento numero %d: ", i + 1);
+		scanf("%f", &numVet[i]);
+	}
+	
+	for(i = 0; i < tamVet; i++){
+		temNaLista = 1;
+		for(j = 0; j < tamVet; j++){
+			if(numVet[i] == numNaoRepetidos[j]){
+				temNaLista = 0;
+			}
 		}
-		else {
-			conta[j]++; 
+		if(temNaLista == 1){
+			numNaoRepetidos[posicaoCont] = numVet[i];
+			posicaoCont++;
+		}
+	}
+	
+	printf("\n");
+	for(i = 0; i < posicaoCont; i++){
+		contQuant = 0;
+		for(j = 0; j < tamVet; j++){
+			if(numNaoRepetidos[i] == numVet[j]){
+				contQuant++;
+			}
+		}
+		if(contQuant > 1){
+			printf("%.1f aprece %d vezes\n", numNaoRepetidos[i], contQuant);
+		}
+		else{
+			printf("%.1f aprece %d vez\n", numNaoRepetidos[i], contQuant);
 		}
 		
 	}
-	for(j=0, j < comp; j++)
-		printf("O numero %f aparece %d vezes na sequencia.\n", seq[j], conta[j]);
-		return 0;
 }
