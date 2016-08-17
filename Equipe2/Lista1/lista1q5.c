@@ -1,3 +1,10 @@
+/*
+Equipe2
+Hermann Hernani
+Lucas Botinelly
+Stephanny Barreto
+*/
+
 #include <stdio.h>
 #define MAX 100
 
