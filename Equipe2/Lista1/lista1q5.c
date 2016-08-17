@@ -52,10 +52,10 @@ int main(int argc,char* argv[]){
 			}
 		}
 		if(contQuant > 1){
-			printf("%.1f aprece %d vezes\n", numNaoRepetidos[i], contQuant);
+			printf("%.1f aparece %d vezes\n", numNaoRepetidos[i], contQuant);
 		}
 		else{
-			printf("%.1f aprece %d vez\n", numNaoRepetidos[i], contQuant);
+			printf("%.1f aparece %d vez\n", numNaoRepetidos[i], contQuant);
 		}
 		
 	}
