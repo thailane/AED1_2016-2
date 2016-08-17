@@ -40,7 +40,10 @@ int main () {
                 n--;
                 vet[j] = vet[n];
             }
-            printf("%.2f ocorre %d vezes\n", vet[i], vezes);
+	    if (vezes == 1)
+		printf("%.2f ocorre %d vez\n", vet[i], vezes);
+	    else
+		printf("%.2f ocorre %d vezes\n", vet[i], vezes);
     }
     return 0;
 }
