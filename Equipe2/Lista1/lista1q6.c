@@ -8,7 +8,6 @@ Stephanny Barreto
 #include <stdio.h>
 #include <stdlib.h>
 
-//Preenche a matriz com os valores de triângulo de Pascal
 void preencher(int n, int **T)
 {
 

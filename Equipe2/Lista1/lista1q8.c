@@ -1,9 +1,11 @@
-//8. Dada uma matriz real Amxn, verificar se existem elementos repetidos em A.
 /*
 Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
+
+8. Dada uma matriz real Amxn, verificar se existem elementos repetidos em A.
+
 */
 #include<stdio.h>
 
