@@ -3,7 +3,7 @@ Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
-Jéssica Tavares
+
 
 5. Dada uma seqüência de n números reais, determinar os números que compõem a seqüência e o número de vezes que cada um deles ocorre na mesma.
 
