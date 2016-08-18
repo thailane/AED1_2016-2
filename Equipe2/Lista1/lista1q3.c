@@ -3,7 +3,7 @@ Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
-Jéssica Tavares
+
 
 3. Dada uma seqüência de n números, imprimi-la na ordem inversa à da leitura
 
