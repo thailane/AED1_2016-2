@@ -16,7 +16,7 @@
 
 int main()
 {
-    int comp, i, vet[MAX];
+    int comp, vet[MAX];
     
     //Recebe a quantidade de números da sequência
     printf("Digite a quantidade de números: ");
