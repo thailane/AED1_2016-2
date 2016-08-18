@@ -1,6 +1,7 @@
 #include<stdio.h>
 
-int main(){
+int main()
+{
     int l, c, i, j, k, m, bol=1;
     printf("Quantidade de linhas da matriz: ");
     scanf("%d", &l);
@@ -18,11 +19,16 @@ int main(){
     }
 	//Processamento
 	
-	for(i = 0; i<l;i++){
-        for(j = 0; j<c;j++){
-            for(k = 0; k<l;k++){
-                for(m = 0; m<c;m++){
-                    if (matriz[i][j] == copia[k][m]){
+	for(i = 0; i<l;i++)
+	{
+        for(j = 0; j<c;j++)
+        {
+            for(k = 0; k<l;k++)
+            {
+                for(m = 0; m<c;m++)
+                {
+                    if (matriz[i][j] == copia[k][m])
+                    {
                         bol = 0;    
                     } 
                     else{
@@ -32,7 +38,8 @@ int main(){
             }
         }
     }
-    if(bol == 0){
+    if(bol == 0)
+    {
         printf("Há elementos repetidos na matriz\n");
     }	
     else{    
