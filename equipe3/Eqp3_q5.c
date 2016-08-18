@@ -1,3 +1,10 @@
+// Equipe 3
+// Alerrandro Barreto
+// Elisandra Oliveira
+// Frank Nápolis
+// Thiago Cauassa
+// Caique Martins
+
 //Lista 1 - Revisão
 //Questão 5
 //5. Dada uma seqüência de n números reais, determinar os números que compõem a seqüência e o número de vezes que cada um deles ocorre na mesma.
@@ -11,12 +18,7 @@
 //                   2.3 ocorre 1 vez
 
 
-// Equipe 3
-// Alerrandro Barreto
-// Elisandra Oliveira
-// Frank Nápolis
-// Thiago Cauassa
-// Caique Martins
+
 
 #include <stdio.h>
 #define MAX 100
