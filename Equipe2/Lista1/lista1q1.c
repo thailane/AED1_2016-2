@@ -16,9 +16,13 @@ int main ()
           matrx[i] = malloc (50*sizeof(int));
 	}
      
-     for (i=0;i<50;i++)
-          for (j=0;j<50;j++) 
+     for (i=0;i<50;i++){
+          for (j=0;j<50;j++){ 
                matrx[i][j]=0.0;
+          }
+     }
      return 0;
+     	
+     	
 }
 
