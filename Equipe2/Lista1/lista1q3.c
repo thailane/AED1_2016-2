@@ -3,6 +3,9 @@ Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
+
+3. Dada uma seqüência de n números, imprimi-la na ordem inversa à da leitura
+
 */
 #include<stdio.h>
 
