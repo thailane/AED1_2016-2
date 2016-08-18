@@ -57,5 +57,9 @@ int main ()
   }
   printf("\n");
   
+  free(vet_final);
+  free(vet);
+  free(matriz);
+  
   return 0; 
 }
