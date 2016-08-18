@@ -3,8 +3,8 @@
     Paulo Roberto
     Paulo Silveira
     Pedro Sena
-    
-    4.Dados dois vetores x e y, determinar o produto escalar desses vetores.
+
+    4.  Dados dois vetores x e y, ambos com n elementos, determinar o produto escalar desses vetores.
 */
 
 #include <stdio.h>
@@ -12,23 +12,23 @@
 
 int main()
 {
-	int *x, *y;
-	int n, i, cont=0;
+	float *x, *y, cont=0;
+	int n, i;
 
 	scanf("%d", &n);
-	x = (int*)malloc(n*sizeof(int));
-	y = (int*)malloc(n*sizeof(int));
+	x = (float*)malloc(n*sizeof(float));
+	y = (float*)malloc(n*sizeof(float));
 
 	for(i=0; i<n; i++){
-	    scanf("%d", &x[i]);
+	    scanf("%f", &x[i]);
 	}
 
 	for(i=0; i<n; i++){
-	    scanf("%d", &y[i]);
+	    scanf("%f", &y[i]);
 	    cont += x[i]*y[i];
 	}
 
-	printf("%d", cont);
+	printf("%.2f\n", cont);
 
 	return 0;
 }
