@@ -3,7 +3,7 @@
     Paulo Roberto
     Paulo Silveira
     Pedro Sena
-    
+
     2. Faça um programa usand ponteiros, para ordenar 5 números e mostrá-los ordenados na tela.
 */
 
@@ -25,16 +25,19 @@ int main()
     //Inicialização
     int *vetor = (int*) malloc (MAX*sizeof(int));
     int i,j;
-    
+
     //Recebe os números
-    printf("Digite os números do vetor: \n")
+    printf("Digite os números do vetor: \n");
     for(i=0;i<MAX;i++) scanf("%i",&vetor[i]);
-    
+
     //Ordena
-    qsort(vetor, MAX, sizeof(int), comparator); //qsort (<vetor a ser ordenado>, <tam>, <tipo>, )
-    
+    qsort(vetor, MAX, sizeof(int), comparator); //qsort (<vetor a ser ordenado>, <tam>, <tipo valor>, <comparador>)
+
     //Ipmrime
     for(i=0;i<MAX;i++) printf("%i ", vetor[i]);
     printf("\n");
+
+    //libera a memória
+    free(vetor);
     return 0;
 }
