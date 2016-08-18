@@ -74,7 +74,7 @@ int main()
   // Libera o vetor
   free(v);
 
-  return 0;
+  return (0);
 }
 
 
