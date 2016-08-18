@@ -1,12 +1,15 @@
+/* equipe 01:
+	Diogo Abreu
+	Fernando Calderaro
+	Leticia Mota
+	Rodrigo Oliveira
+	Thailana Neves			
+
+	Questão 06
+	Imprimir as n primeiras linhas do triângulo de Pascal 
+*/
+
 #include<stdio.h>
-/*	Rodrigo oliveira
-	Fernando calderaro
-	Thailana neves
-	Diogo abreu
-	Leticia mota		
-
-
-6.Imprimir as n primeiras linhas do triângulo de Pascal */
 
 
 void println( int* v, int tamanho )
