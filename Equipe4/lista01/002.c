@@ -1,62 +1,53 @@
 /*Equipe 4:
 
-Matheus Obando
-Fabíola Maciel
-Jefferson Avilar
+  Matheus Obando
+  Fabíola Maciel
+  Jefferson Avilar
 
-2. Faça um programa usando ponteiros, para ordenar 5 números e mostrá­-los ordenados na tela.*/
+  2. Faça um programa usando ponteiros, para ordenar 5 números e mostrá­-los ordenados na tela.*/
 
 #include<stdio.h>
 #include<stdlib.h>
 
+#define tam 5
 
 int main()
 {
 
-    	int *vetor;
-    	int i,j;
-    	int aux;
+  int *vetor;
+  int i,j;
+  int aux;
 
-    	vetor=(int*)calloc(5,sizeof(int));
+  vetor=(int*)calloc(tam,sizeof(int));
 
-    	for (i=0;i<5;i++){
+  // Adiciona velores as determinadas posições no vetor
+  for (i=0;i<tam;i++){
+    printf("Digite o elemento %d: ",i+1);
+    scanf("%d",&vetor[i]);
+    printf("\n");
+  }
 
+  // Imprime o vetor 
+  for (i=0;i<tam;i++){
+    printf("%d",vetor[i]);
+  }
 
-        	printf("Digite o elemento %d: ",i+1);
-        	scanf("%d",&vetor[i]);
-        	printf("\n");
-    	}
+  printf("\n");
 
-    	for (i=0;i<5;i++){
-
-        	printf("%d",vetor[i]);
-
-    	}
-
-    	printf("\n");
-
-    	for (i=4;i>0;i--){
-
-        	for (j=0;j<i;j++){
-
-            		if(vetor[j]>vetor[j+1]){
-
-                		aux=vetor[j];
-                		vetor[j]=vetor[j+1];
-                		vetor[j+1]=aux;
+  // Ordenação usando Bubble Sort
+  for (i=(tam-1);i>0;i--){
+    for (j=0;j<i;j++){
+      if(vetor[j]>vetor[j+1]){
+        aux=vetor[j];
+        vetor[j]=vetor[j+1];
+        vetor[j+1]=aux;
 			}
 		}
-    	}
+  }
 
+  for (i=0;i<tam;i++){
+    printf("%d",vetor[i]);
+  }
 
-    	for (i=0;i<5;i++){
-
-        	printf("%d",vetor[i]);
-
-    	}
-
-
-    	return (0);
-
-
+  return 0;
 }

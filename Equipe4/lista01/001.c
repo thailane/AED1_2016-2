@@ -17,58 +17,41 @@ return(0);
 		
 #include<stdio.h>
 #include<stdlib.h>
-#DEFINE LINHA 50
-#DEFINE COLUNA 50
+#define LINHA 50
+#define COLUNA 50
 
 int main()
 {
 
-    	float **matriz;
-    	int i,j;
+  float **matriz;
+  int i,j;
 
 
 	matriz=(float**)calloc(LINHA,sizeof(float*));
 
-    	if(matriz==NULL)
-	{
+  if(matriz==NULL)
+    {
+      printf("Erro: memoria insuficiente.");
+      return (1);
+    }
 
-        	printf("Erro: memoria insuficiente.");
+  for (i=0;i<50;i++)
+    matriz[i]=(float*)calloc(COLUNA,sizeof(float));
 
-        	return (1);
+  if (matriz[i]==NULL)
+    {
+      printf("Erro: memoria insuficiente");
+      return(1);
+    }
 
-    	}
+  for (i=0;i<LINHA;i++){
+    for (j=0;j<COLUNA;j++){
+      matriz[i][j]=0.0;
+    }
+  }
 
+  free(matriz);
 
-    	for (i=0;i<50;i++)
-
-        	matriz[i]=(float*)calloc(COLUNA,sizeof(float));
-
-
-        if (matriz[i]==NULL)
-	{
-
-            	printf("Erro: memoria insuficiente");
-
-            	return(1);
-        }
-
-    
-
-
-
-    	for (i=0;i<LINHA;i++){
-
-        	for (j=0;j<COLUNA;j++){
-
-
-            	matriz[i][j]=0.0;
-        	}
-
-
-    	}
-
-    	free(matriz);
-
-    	return (0);
+  return (0);
 
 }

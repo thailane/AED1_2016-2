@@ -1,3 +1,13 @@
+/*Equipe 4: 
+
+  Jefferson Avilar
+  Matheus Obando
+  Fabíola Maciel
+
+  8.  Dada uma matriz real  Amxn, verificar se existem elementos repetidos em A.
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,11 +21,13 @@ int main()
     *xvector,
     aux = 0;
 
+  // Adicionando as entradas
   printf("Insira a quantidade de linhas desejadas: ");
   scanf("%d", &nrows);
   printf("Insira a quantidade de colunas desejadas: ");
   scanf("%d", &ncols);
 
+  // Alocando vetor
   xvector = (int *) malloc(sizeof(int) * (nrows*ncols));
 
   /* Alocando a matriz na memória */
@@ -37,7 +49,7 @@ int main()
         {
           printf("Insira o elemento[%d][%d]: ", z,x);
           scanf("%d", &matrix[z][x]);
-          xvector[aux++] = matrix[z][x];
+          xvector[aux++] = matrix[z][x]; // Adicionando elementos ao vetor
         }
     }
 
@@ -66,7 +78,7 @@ int main()
         {
           if (xvector[m] == xvector[n])
             {
-              if (n < m)
+              if (n < m) // É necessário que 'm' seja maior que 'n'
                 {
                   break;
                 }

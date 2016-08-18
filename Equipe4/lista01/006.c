@@ -1,12 +1,17 @@
-/*
-6. Imprimir as n primeiras linhas do triângulo de Pascal
+/*Equipe 4: 
+
+  Jefferson Avilar
+  Matheus Obando
+  Fabíola Maciel
+
+  6. Imprimir as n primeiras linhas do triângulo de Pascal
+
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
 void preenche_tri(int n, int **xvector);
-void imprime_tri(int n, int **xvector);
 
 int main()
 {
@@ -14,7 +19,7 @@ int main()
   int **xvector,
         n;
 
-  printf("Insira a quantidade de lihas desejada: ");
+  printf("Insira a quantidade de lihas desejada, maior que 0 (zero): ");
   scanf("%d", &n);
 
 
@@ -27,14 +32,19 @@ int main()
       xvector[i] = (int *) malloc (sizeof(int) * (i+1)); //Aloca na memória espaço para as colunas damatriz
     }
 
-  // Caso a entrada seja menor ou igual a '0' o programa termina
-  if(n<=0)
-    {
-      return(1);
-    }
-
+  // Chama a função que gera o triângulo de pascal
   preenche_tri(n, xvector);
-  imprime_tri(n, xvector);
+
+  // Imprime o triângulo
+  for (int i = 0; i < n; i++)
+    {
+      for (int j = 0; j <= i; j++)
+        {
+          // Imprime o valor com um pouco de espaço
+          printf("%5d ", xvector[i][j]);
+        }
+      printf("\n");
+    }
 
   return (0);
 }
@@ -62,21 +72,3 @@ void preenche_tri(int n, int **xvector)
         }
     }
 }
-
-/* Função que imprime a matriz como um Triângulo de Pascal */
-
-void imprime_tri(int n, int **xvector)
-{
-
-  for (int i = 0; i < n; i++)
-    {
-      for (int j = 0; j <= i; j++)
-        {
-          // Imprime o valor com um pouco de espaço
-          printf("%5d ", xvector[i][j]);
-        }
-      printf("\n");
-    }
-}
-
- 

@@ -1,3 +1,11 @@
+/*Equipe 4:
+
+  Jefferson Avilar
+  Fabiola Maciel
+  Matheus Obando
+  3. Dada uma seqüência de n números, imprimi-la na ordem inversa à da leitura
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
