@@ -5,6 +5,7 @@ Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
 */
+//Faça um programa usando ponteiros, para ordenar 5 números e mostrá­-los ordenados na tela.
 #include <stdio.h>
 #include <stdlib.h>
 
