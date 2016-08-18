@@ -44,12 +44,10 @@ int main ()
   vet_final=(float *)malloc(lin*sizeof(float));
   for(i=0;i<lin;i++){
     for(j=0;j<col;j++){
-      
-      
-	  prod=matriz[i][j]*vet[j];
-      soma+=prod;
-      
-      
+    	
+	prod=matriz[i][j]*vet[j];
+	soma+=prod;
+    	
     }
     vet_final[i] = soma;
     printf("%.2f ", vet_final[i]);//imprime o vetor a medida que é preenchido
