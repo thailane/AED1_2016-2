@@ -1,3 +1,5 @@
+//6. Imprimir as n primeiras linhas do triângulo de Pascal
+
 #include<stdio.h>
 
  int main()
