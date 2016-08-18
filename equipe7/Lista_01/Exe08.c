@@ -1,3 +1,5 @@
+//8.  Dada uma matriz real  Amxn, verificar se existem elementos repetidos em A.
+
 #include<stdio.h>
 #define MAX 50
 
