@@ -22,7 +22,7 @@ int main ()
   scanf("%d", &lin);
   printf("\nDigite o número de colunas da matriz: ");
   scanf("%d", &col);
-  printf("\nO comprimento do vetor deve ser igual ao valor do número de colunas da matriz ")
+  printf("\nO comprimento do vetor deve ser igual às colunas da matriz \n\n")
   
   //Criação da matriz pela alocação dinâmica; ela é preenchida a medida que é criada
   matriz=(int **)malloc(lin*sizeof(int*));
@@ -36,7 +36,7 @@ int main ()
   
   //Criação do vetor, também preenchido a medida que é criado
   vet=(int *)malloc(col*sizeof(int));
-  printf("Digite os elementos do vetor: \n");
+  printf("\nDigite os elementos do vetor: \n");
   for (i=0;i<col;i++) scanf("%d", &vet[i]);
   printf("\n");
   
@@ -50,12 +50,10 @@ int main ()
       soma=soma+prod;
     }
     vet_final[j]=soma;
+    printf("%d ", &vet_final[i]);//imprime o vetor a medida que é preenchido
     soma=0;
   }
   printf("\n");
-  
-  //imprime o vetor
-  for(i=0;i<lin;i++) printf("%d ", &vet_final[i]);
   
   return 0; 
 }
