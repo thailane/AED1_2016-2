@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void)
+int main()
 {
 	int *x, *y;
 	int n, i, cont=0;
