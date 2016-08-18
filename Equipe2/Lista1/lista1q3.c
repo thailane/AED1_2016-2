@@ -6,25 +6,30 @@ Stephanny Barreto
 */
 #include<stdio.h>
 
-int main(){
+int main()
+{
 	int tam, i, j, cont=0;
 	scanf("%d", &tam);
 	int vet[tam], final[tam];
-	for(i=0; i<tam;i++){
+	for(i=0; i<tam;i++)
+	{
 		scanf("%d", &vet[i]);
 	}
-	for(j=tam-1;j>=0;j--){
+	for(j=tam-1;j>=0;j--)
+	{
 		final[cont]=vet[j];
 		cont++;
 	}
 
 	
 	printf("Antes da inversão: ");
-	for(i=0;i<tam;i++){
+	for(i=0;i<tam;i++)
+	{
 		printf("%d", vet[i]);
 	}
 	printf("\nDepois da inversão: ");
-	for(j=0; j<tam;j++){
+	for(j=0; j<tam;j++)
+	{
 		printf("%d", final[j]);
 	}
 	printf("\n");

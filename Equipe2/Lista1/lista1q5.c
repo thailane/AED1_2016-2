@@ -8,7 +8,8 @@ Stephanny Barreto
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc,char* argv[]){
+int main(int argc,char* argv[])
+{
 	
 	int tamVet;
 	int i;
@@ -25,36 +26,46 @@ int main(int argc,char* argv[]){
 	float numVet[tamVet];
 	float numNaoRepetidos[tamVet];
 	printf("\n");
-	for(i = 0; i < tamVet; i++){
+	for(i = 0; i < tamVet; i++)
+	{
 		printf("Elemento numero %d: ", i + 1);
 		scanf("%f", &numVet[i]);
 	}
 	
-	for(i = 0; i < tamVet; i++){
+	for(i = 0; i < tamVet; i++)
+	{
 		temNaLista = 1;
-		for(j = 0; j < tamVet; j++){
-			if(numVet[i] == numNaoRepetidos[j]){
+		for(j = 0; j < tamVet; j++)
+		{
+			if(numVet[i] == numNaoRepetidos[j])
+			{
 				temNaLista = 0;
 			}
 		}
-		if(temNaLista == 1){
+		if(temNaLista == 1)
+		{
 			numNaoRepetidos[posicaoCont] = numVet[i];
 			posicaoCont++;
 		}
 	}
 	
 	printf("\n");
-	for(i = 0; i < posicaoCont; i++){
+	for(i = 0; i < posicaoCont; i++)
+	{
 		contQuant = 0;
-		for(j = 0; j < tamVet; j++){
-			if(numNaoRepetidos[i] == numVet[j]){
+		for(j = 0; j < tamVet; j++)
+		{
+			if(numNaoRepetidos[i] == numVet[j])
+			{
 				contQuant++;
 			}
 		}
-		if(contQuant > 1){
+		if(contQuant > 1)
+		{
 			printf("%.1f aparece %d vezes\n", numNaoRepetidos[i], contQuant);
 		}
-		else{
+		else
+		{
 			printf("%.1f aparece %d vez\n", numNaoRepetidos[i], contQuant);
 		}
 		
