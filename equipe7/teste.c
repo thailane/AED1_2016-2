@@ -14,10 +14,13 @@
 int aparece (int n, float *vet){
     int i,j;
 
+
 	for(i=0; i<n; i++){
 	    for(j=i-1; j>=0; j--){
 	        if(vet[j] == vet[i]) {
                 return 1;
+            else
+                return 0;
 }
 
 int main()
