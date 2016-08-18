@@ -14,7 +14,7 @@
 
 int main()
 {
-	int vetor[TAM], vetor2[TAM], vetor3[TAM], i, tamVet;
+	int vetor[TAM], vetor2[TAM], produto=0, i, tamVet;
 	
 	printf("Digite o tamanho dos vetores: ");
 	scanf("%i", &tamVet);
@@ -36,13 +36,9 @@ int main()
 	//Multiplicação dos vetores
 	for(i=0;i<tamVet;i++)
 	{
-		vetor3[i]= vetor[i]*vetor2[i];
+		produto = produto + vetor[i]*vetor2[i];
 	}
 	
-	
-	printf("\n\n		Multiplicacao dos vetores:\n");
-	for(i=0;i<tamVet;i++)
-	{
-		printf(" %i ", vetor3[i]);
-	}
+	printf("\n\n		Produto escalar dos vetores:\n");
+	printf(" %i ", produto);
 }

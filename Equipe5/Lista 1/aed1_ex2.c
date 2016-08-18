@@ -30,16 +30,14 @@ int main()
 		{
 			if(p[i]>=p[j])
 			{
-				aux=p[i];
-				p[i]=p[j];
-				p[j]=aux;
+				aux=vetor[i];
+				vetor[i]=vetor[j];
+				vetor[j]=aux;
 			}
 			
 		}
 		
 	}
-	
-	
 	for(i=0;i<5;i++)
 	{
 		printf("\n Posicao %i: %i", i+1, p[i]);
