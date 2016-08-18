@@ -10,8 +10,10 @@ int main()
     int matriz[l][c], copia[l][c], n;
     
     printf("Digite os valores da matriz: \n");
-    for(i = 0; i<l;i++){
-        for(j = 0; j<c;j++){
+    for(i = 0; i<l;i++)
+    {
+        for(j = 0; j<c;j++)
+        {
             scanf("%d", &n);
             matriz[i][j] = n;
             copia[i][j] = n;
