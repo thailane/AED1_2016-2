@@ -3,8 +3,7 @@ Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
-*/
-/*
+
 Reescreva o programa abaixo usando ponteiros
 
 int main ()
