@@ -14,24 +14,24 @@
 int main()
 {
     int **matriz ;
-    int i ,j ,u ,v ,m ,n ;
-    int x = 0;
+    int i ,j ,u ,v ,linhas ,colunas ;
+    int numero_de_repeticoes = 0;
 
     //entrada de dados
     printf("- O produto de uma matriz de tamanho mxn com um vetro de tamanho n - \n");
     printf("Informe o numero de linhas da matriz: \n");
-    scanf("%d",&m);
+    scanf("%d",&linhas);
     printf("Informe o numero de colunas da matriz: \n");
-    scanf("%d",&n);
+    scanf("%d",&colunas);
     printf("\n");
 
     //matriz com alocação dinamica
-    matriz = (int **)malloc(m * sizeof(int*));
-    for(i=0;i<m;i++)
+    matriz = (int **)malloc(linhas * sizeof(int*));
+    for(i=0;i<linhas;i++)
     {
-        matriz[i] = (int *)malloc(n * sizeof(int));
-        printf("Informe os %d elementos da %d linha da matriz: \n",n,(i+1));
-        for(j=0;j<n;j++)
+        matriz[i] = (int *)malloc(colunas * sizeof(int));
+        printf("Informe os %d elementos da %d linha da matriz: \n",colunas,(i+1));
+        for(j=0;j<colunas;j++)
         {
             scanf("%d",&matriz[i][j]);//preenche a matriz
         }
@@ -40,9 +40,9 @@ int main()
     
     //imprime a matriz
     printf("Matriz: \n");
-    for(i=0;i<m;i++)//imprime a matriz
+    for(i=0;i<linhas;i++)//imprime a matriz
     {
-        for(j=0;j<n;j++)
+        for(j=0;j<colunas;j++)
         {
             printf("%d  ",matriz[i][j]);
         }
@@ -50,27 +50,27 @@ int main()
     }
     printf("\n");
 
-    for(u=0;u<m;u++)//compara cada elemento da matriz com todos os demais elementos
+    for(u=0;u<linhas;u++)//compara cada elemento da matriz com todos os demais elementos
     {
-        for(v=0;v<n;v++)
+        for(v=0;v<colunas;v++)
         {
-            for(i=0;i<n;i++)
+            for(i=0;i<linhas;i++)
             {
-                for(j=0;j<n;j++)
+                for(j=0;j<colunas;j++)
                 {
                     if(matriz[u][v] == matriz[i][j])
                     {
-                        x = x + 1;//conta quantas vezes o numero repetiu
+                        numero_de_repeticoes = numero_de_repeticoes + 1;//conta quantas vezes o numero repetiu
                     }
                 }
             }
       
             //se o valor de x, que foi inicializado como zero, se alterar quer dizer que o numero se repetiu na matriz
-            if(x != 0)
+            if(numero_de_repeticoes != 0)
             {
-                printf("o numero %d repete %d vezes \n",matriz[u][v],x);
+                printf("o numero %d repete %d vezes \n",matriz[u][v],numero_de_repeticoes);
             }
-            x = 0;
+            numero_de_repeticoes = 0;
         }
     }
 
