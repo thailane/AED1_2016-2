@@ -1,3 +1,13 @@
+
+
+// Equipe 3
+// Alerrandro Barreto
+// Elisandra Oliveira
+// Frank Nápolis
+// Thiago Cauassa
+// Caique Martins
+// 6. Imprimir as n primeiras linhas do triângulo de Pascal
+	
 //Lista 1 - Revisão
 //Questão 6 - (Matriz)Imprimir as n primeiras linhas do triângulo de Pascal.
 

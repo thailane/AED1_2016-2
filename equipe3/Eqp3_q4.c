@@ -1,4 +1,3 @@
-//4. Dados dois vetores x e y, ambos com n elementos, determinar o produto escalar desses vetores.
 //Equipe 3
 //Alerrandro Barreto
 //Elisandra Oliveira
@@ -6,6 +5,10 @@
 //Thiago Cauassa
 //Caique Martins
 	
+
+
+//4. Dados dois vetores x e y, ambos com n elementos, determinar o produto escalar desses vetores.
+
 
 
 
