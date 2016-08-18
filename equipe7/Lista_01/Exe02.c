@@ -4,6 +4,7 @@
     Paulo Silveira
     Pedro Sena
     
+    2. Faça um programa usando ponteiros, para ordenar 5 números e mostrá­-los ordenados na tela.
 */
 
 #include<stdio.h>
