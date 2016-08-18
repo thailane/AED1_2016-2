@@ -3,8 +3,11 @@ Aline Lima
 Amanda Leticia
 Eduardo Azevedo
 Lucas Almeida
+
+6. Imprimir as n primeiras linhas do triângulo de Pascal
 */
 #include <stdio.h>
+#include <stdlib.h>
 #define linhas 5
 
 
@@ -28,7 +31,7 @@ int main()
 		printIntVetor(tripascal, tamanho);
 
 		int * aux = new int[tamanho + 1];	// cria um novo vetor para a proxima linha
-		aux[0] = 1;							// inicia o 1� campo com 1
+		aux[0] = 1;							// inicia o 1º campo com 1
 		aux[tamanho] = 1;					// inicia o ultimo campo com 1
 
 		for (int i = 0; i < tamanho -1; i++)				// 
