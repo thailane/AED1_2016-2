@@ -4,6 +4,7 @@ Helder Serra
 Jefferson Avilar
 Matheus Obando
 Fabíola Maciel
+Kauê Fontes
 
 1. Reescreva o programa abaixo usando ponteiros
  
