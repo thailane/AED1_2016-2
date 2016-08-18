@@ -4,7 +4,7 @@ Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
-Jéssica Tavares
+
 
 7. Dada uma matriz real A com m linhas e n colunas e um vetor real V com n elementos, determinar o produto de A por V. 
 
