@@ -1,47 +1,34 @@
-
-
 // Equipe 3
 // Alerrandro Barreto
 // Elisandra Oliveira
 // Frank Nápolis
-// Thiago Cauassa
+// Tiago Cauassa
 // Caique Martins
 
 //7. Dada uma matriz real A com m linhas e n colunas e um vetor real V com n elementos, determinar o produto de A por V. 
 #include <stdio.h>
-#define M 4 
-#define N 5 
-int main() { 
-	
-	float a[M][N], v[N], p[M]; 
- 
-	for (int i=0; i<M; i++) 
-	{
-	
-	for (int j=0; j<N; j++) 
-	{ 
-	printf("Informe A[%d][%d]: ", i, j); 
-	scanf("%f", &a[i][j]); 
-	} 
-	for (int j=0; j<M; j++) 
-	{ 
-	printf("Informe V[%d]: ", j); 
-	scanf("%f", &v[j]); 
-	} 
+#define TAM 2 //Esta define o tamanho da matriz
 
-	for (int i =0; i<M; i++) 
-	{ 
-	p[i] = 0; 
-	for (int j=0; j<N; j++) 
-	{
-	
-	p[i] += a[i][j] * v[j]; 
-	} 
-	printf("Produto A x V:\n"); 
+int main()
+{
+    int vetor[TAM], matriz[TAM][TAM], prod[TAM];
+    int linha, coluna, i;
+    
+    //Esta parte escreve a matriz
+    for(linha = 0 ; linha < TAM ; linha++)
+        for(coluna = 0 ; coluna < TAM ; coluna++)
+        {
+            printf("Elemento [%d][%d]: ", linha+1, coluna+1);
+            scanf("%d", &matriz[linha][coluna]);
+        }
 
-	for (int i=0; i<M; i++)
-	{ 
-	printf("\t%f\n", p[i]);
+    //Esta parte escreve o vetor
+    for(i = 0; i < TAM ; i++){
+	    printf("Elemento [%d]: ", i+1);
+	    scanf("%d", &vetor[i]);
 	}
-	return 0; 
+
+    prod[i]+= vetor[i]*matriz[linha][coluna];
+    printf("\nProduto: %d", prod[i]);
+
 }
