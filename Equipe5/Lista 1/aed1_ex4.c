@@ -1,38 +1,48 @@
 /*
-Aline Lima
-Amanda Leticia
-Eduardo Azevedo
-Lucas Almeida
+	Aline Lima
+	Amanda Leticia
+	Eduardo Azevedo
+	Lucas Almeida
+
+4. Dados dois vetores x e y, ambos com n elementos, determinar o produto escalar desses vetores.
+
 */
-#include <stdio.h> 
-#define MAX 10 
 
-int main() 
-{ 
-	int i, n; 
-	double prod, x[MAX], y[MAX]; 
+#include<stdio.h>
+#include<stdlib.h>
+#define TAM 15
 
-	printf("Digite o tamanho dos vetores: "); 
-	scanf("%d", &n); 
-	printf("Digite os componentes do vetor x: "); 
-
-	for (i = 0; i < n; i++) 
-   		scanf("%lf", &x[i]); 
-
-		printf("Digite os componentes do vetor y: "); 
-
-	for (i = 0; i < n; i++) 
-    	scanf("%lf", &y[i]); 
-
-	prod = 0; 
-
-	for (i = 0; i < n; i++) 
-  prod = prod + x[i] * y[i]; 
-
-printf("Produto escalar desses vetores: %g\n", prod); 
-
-
-return 0; 
-
-} 
-
+int main()
+{
+	int vetor[TAM], vetor2[TAM], vetor3[TAM], i, tamVet;
+	
+	printf("Digite o tamanho dos vetores: ");
+	scanf("%i", &tamVet);
+	
+	//Preenchimento do vetor 1
+	for(i=0;i<tamVet;i++)
+	{
+		printf("\n Digite um numero para a posicao %i do primeiro vetor: ", i+1);
+		scanf("%i", &vetor[i]);
+	}
+	
+	//Preenchimento do vetor 2
+	for(i=0;i<tamVet;i++)
+	{
+		printf("\n Digite um numero para a posicao %i do segundo vetor: ", i+1);
+		scanf("%i", &vetor2[i]);
+	}
+	
+	//Multiplicação dos vetores
+	for(i=0;i<tamVet;i++)
+	{
+		vetor3[i]= vetor[i]*vetor2[i];
+	}
+	
+	
+	printf("\n\n		Multiplicacao dos vetores:\n");
+	for(i=0;i<tamVet;i++)
+	{
+		printf(" %i ", vetor3[i]);
+	}
+}

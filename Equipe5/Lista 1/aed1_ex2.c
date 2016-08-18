@@ -1,47 +1,47 @@
 /*
-Aline Lima
-Amanda Leticia
-Eduardo Azevedo
-Lucas Almeida
+	Aline Lima
+	Amanda Leticia
+	Eduardo Azevedo
+	Lucas Almeida
+
+2. Faça um programa usando ponteiros, para ordenar 5 números e mostrá­-los ordenados na tela.
+
 */
-#include <stdio.h>
-#include <stdlib.h>
 
-int main(void)
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
 {
-	int *v;
-	int num;
-	int i,k, aux;
-
-	v = (int*)malloc(5 * sizeof(int));
-	if(v == NULL)
-	{
-		printf("\nEspaco em memoria insuficiente!");
-		exit(1);
-	}
+	int vetor[5], *p, i, j, aux;
+	p=vetor;
+	
+	//Preenchimento do vetor usando ponteiro
 	for(i=0;i<5;i++)
 	{
-		printf("Digite um valor para V[%d]: ",i);
-		scanf("%d",v+i);
+		printf("\n Digite um valor para posicao %i: ", i+1);
+		scanf("%i", p+i);
 	}
+	
+	//Ordenação
 	for(i=0;i<5;i++)
 	{
-		for(k=i+1;k<5;k++)
+		for(j=i+1;j<5;j++)
 		{
-			if(v[i] > v[k])
+			if(p[i]>=p[j])
 			{
-				aux = v[i];
-				v[i] = v[k];
-				v[k] = aux;
+				aux=p[i];
+				p[i]=p[j];
+				p[j]=aux;
 			}
+			
 		}
-
+		
 	}
+	
+	
 	for(i=0;i<5;i++)
 	{
-		printf("\nValor de V[%d] = %d",i,v[i]);
-	}
-	return(1);
-	free(v);
-	v = NULL;
+		printf("\n Posicao %i: %i", i+1, p[i]);
+	}	
 }
