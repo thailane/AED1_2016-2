@@ -20,12 +20,12 @@ int main ()
 	scanf("%d", &n);
 
 	printf("Digite os %d valores da sequência: \n", n);
-
+	//lê os valores da sequência
 	for (i=0; i<n; i++)
 	{
 		scanf("%d", &vet[i]);
 	}
-
+	//faz a inversão da sequência
 	for (i=n-1; i>=0; i--)
 	{
 		printf("%d ", vet[i]);
