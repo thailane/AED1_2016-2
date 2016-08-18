@@ -55,6 +55,7 @@ int main ()
   }
   printf("\n");
   
+  //Libera memória
   free(vet_final);
   free(vet);
   free(matriz);
