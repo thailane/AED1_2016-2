@@ -3,20 +3,20 @@
     Paulo Roberto
     Paulo Silveira
     Pedro Sena
-    
-    5.Dada uma seqüência de n números reais, determinar os números que compõem a seqüência e o número de vezes que cada um deles 
+
+    5.Dada uma seqüência de n números reais, determinar os números que compõem a seqüência e o número de vezes que cada um deles
     ocorre na mesma.
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() 
+int main()
 {
 	float *sequencia, *ordenado;
 	int n, i, j, fim=0, k, *vezes;
 
-	scanf("%d", &n);
+	scanf("%i", &n);
 
 	sequencia = (float*)malloc(n*sizeof(float));
 	vezes = (int*)malloc(n*sizeof(int));
@@ -45,13 +45,19 @@ int main()
 	}
 
 	printf("Sequência: ");
-	for(i=0; i<fim; i++){
-	    printf("%.1f ", ordenado[i]);
+	for(i=0; i<n-1; i++){
+	    printf("%.1f, ", sequencia[i]);
 	}
-	printf("\nFrequências:\n");
+	printf("%.1f\n", sequencia[i]);
+
+	printf("Frequências:  ");
 	for(i=0; i<fim; i++){
 	    printf("%.1f aparece %d vez(es)\n", ordenado[i], vezes[i]);
 	}
+
+	free(ordenado);
+	free(sequencia);
+	free(vezes);
 
 	return 0;
 }
