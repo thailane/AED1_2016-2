@@ -4,11 +4,10 @@ Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
 */
-
+//6. Imprimir as n primeiras linhas do triângulo de Pascal
 #include <stdio.h>
 #include <stdlib.h>
 
-//Preenche a matriz com os valores de triângulo de Pascal
 void preencher(int n, int **T)
 {
 

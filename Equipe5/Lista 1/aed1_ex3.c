@@ -4,25 +4,23 @@ Amanda Leticia
 Eduardo Azevedo
 Lucas Almeida
 */
+
+//3. Dada uma seqüência de n números, imprimi-la na ordem inversa à da leitura. 
 #include <stdio.h>
 #define TAMMAX 100
 
-main() 
+int main() 
 {
-  int n, i, v[TAMMAX];
-
-  printf("Digite o comprimento da sequencia: ");
-  scanf("%d", &n);
-
-  
-  for (i = 0; i < n; i++)
-  {
-
-		printf("\n Digte um valor para posicao %i do vetor: ",i+1);
+	int comprimento, i, v[TAMMAX];
+	printf("Entre com o comprimento da sequencia: ");
+	scanf("%d", &comprimento); 
+	for (i = 0; i < comprimento; i++)
+	{
+		printf("\n Digite um valor para posicao %i do vetor: ",i+1);
 		scanf("\n %d", &v[i]);
 	}
-	
-  for (i = n-1; i >= 0; i--)
-  	printf("%d ", v[i]);
+	for (i = comprimento-1; i >= 0; i--)
+		printf("%d ", v[i]);
+	return 0;
 }
 
