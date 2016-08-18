@@ -4,6 +4,7 @@
   Fabiola Maciel
   Matheus Obando
   Helder Serra
+  Kauê Fontes
   
   3. Dada uma seqüência de n números, imprimi-la na ordem inversa à da leitura
 */
