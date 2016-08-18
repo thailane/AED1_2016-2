@@ -4,6 +4,7 @@
   Matheus Obando
   Fabíola Maciel
   Helder Serra
+  Kauê Fontes
 
   6. Imprimir as n primeiras linhas do triângulo de Pascal
 
