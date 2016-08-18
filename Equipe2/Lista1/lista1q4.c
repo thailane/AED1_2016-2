@@ -3,7 +3,11 @@ Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
+
+4.  Dados dois vetores x e y, ambos com n elementos, determinar o produto escalar desses vetores.
+
 */
+
 #include<stdio.h>
 
 int main()
