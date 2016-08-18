@@ -3,6 +3,7 @@ Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
+Jéssica Tavares
 
 4.  Dados dois vetores x e y, ambos com n elementos, determinar o produto escalar desses vetores.
 
