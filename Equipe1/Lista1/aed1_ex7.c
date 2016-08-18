@@ -15,7 +15,7 @@ int main()
     int *vetor ;
     int *vetorproduto;
     int **matriz ;
-    int i ,j ,linhas ,colunas ,produto ;
+    int i ,j ,n , linhas ,colunas ,produto ;
     int soma_dos_produtos = 0;
 
     //entrada de dados
@@ -73,7 +73,7 @@ int main()
             produto = matriz[i][j] * vetor[j];
             soma_dos_produtos = soma_dos_produtos + produto;
         }
-        vetorproduto[i] = soma;//preenche o vetorproduto com o produto da matriz com o vetor
+        vetorproduto[i] = soma_dos_produtos;//preenche o vetorproduto com o produto da matriz com o vetor
         printf("%d\n",vetorproduto[i]);//imprime o vetor
         soma_dos_produtos = 0;
     }
