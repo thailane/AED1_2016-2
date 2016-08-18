@@ -3,6 +3,7 @@ Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
+Jéssica Tavares
 
 Reescreva o programa abaixo usando ponteiros
 
