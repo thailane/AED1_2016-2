@@ -5,7 +5,7 @@ Lucas Botinelly
 Stephanny Barreto
 */
 #include <stdio.h>
-
+#include <stdlib.h> 
 int main ()
 {
      float **matrx;
