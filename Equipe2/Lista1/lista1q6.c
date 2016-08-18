@@ -3,6 +3,9 @@ Equipe2
 Hermann Hernani
 Lucas Botinelly
 Stephanny Barreto
+
+6. Imprimir as n primeiras linhas do triângulo de Pascal
+
 */
 
 #include <stdio.h>
