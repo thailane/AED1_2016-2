@@ -1,6 +1,15 @@
+//Equipe3
+//Alerrandro Barreto
+//Elisandra Oliveira
+//Frank Nápolis
+//Thiago Cauassa
+//Caique Martins
+
+
 //Lista 1 - Revisão
 //Questão 3 - (Vetor)Dada uma seqüência de n números, imprimi-la
 //na ordem inversa à da leitura.
+
 
 #include <stdio.h>
 #define MAX 100
