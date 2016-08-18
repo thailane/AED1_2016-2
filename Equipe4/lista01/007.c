@@ -4,6 +4,7 @@
   Matheus Obando
   Fabíola Maciel
   Helder Serra
+  Kauê Fontes
 
   7. Dada uma matriz real A com m linhas e n colunas e um vetor real V com n elementos, determinar o produto de A por V.
 
