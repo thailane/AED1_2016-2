@@ -16,7 +16,7 @@
 
 int main()
 {
-	float *n;
+	float *vet;
 	int i,j,temp;
 	vet = NULL;
 	
