@@ -12,7 +12,7 @@
 
 #define MAX 5
 
-//Função obrigatória para uso do qsort
+//Função que ensina ao qsort como ordenar, função necessária
 int comparator(const void *val1, const void *val2)
 {
     if(*(int*)val1 < *(int*)val2) return -1;
