@@ -14,23 +14,25 @@
 
 int main () {
 	int i, n;
-	float produtoe, vetx[10], vety[10];
+	float produtoe, vet_x[10], vet_y[10];
 
 	produtoe = 0;
 
 	printf("Digite o tamanho dos vetores: ");
 	scanf("%d", &n);
 
-	printf("Digite os componentes do vetor x: ");
+	//lê os elementos do vetor x
+	printf("Digite os componentes do vetor x:\n ");
 	for (i=0; i<n; i++)
 	{
-		scanf("%f", &vetx[i]);
+		scanf("%f", &vet_x[i]);
 	}
 
-	printf("Digite os componentes do vetor y: ");
+	//lê os elementos do vetor y
+	printf("Digite os componentes do vetor y:\n ");
 	for (i=0; i<n; i++)
 	{
-		scanf("%f", &vety[i]);
+		scanf("%f", &vet_y[i]);
 	}
 
 	for (i=0; i<n; i++)
