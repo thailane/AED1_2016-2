@@ -4,6 +4,7 @@
   Matheus Obando
   Fabíola Maciel
   Helder Serra
+  Kaue Fontes
 
   4.  Dados dois vetores x e y, ambos com n elementos, determinar o produto escalar desses vetores.
 */
