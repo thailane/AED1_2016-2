@@ -19,11 +19,10 @@ int main()
 	x = (float*)malloc(n*sizeof(float));
 	y = (float*)malloc(n*sizeof(float));
 
-	for(i=0; i<n; i++){
-	    scanf("%f", &x[i]);
-	}
+	for(i=0; i<n; i++) scanf("%f", &x[i]);
 
-	for(i=0; i<n; i++){
+	for(i=0; i<n; i++)
+	{
 	    scanf("%f", &y[i]);
 	    cont += x[i]*y[i];
 	}
