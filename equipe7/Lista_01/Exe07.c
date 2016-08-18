@@ -12,45 +12,47 @@
 
 int main ()
 {
-  int **matriz;
-  int *vet, *vet_final;
-  int lin, col;
-  int prod, soma = 0;
+  float **matriz;
+  float *vet, *vet_final;
+  int lin, col, i, j;
+  float prod, soma = 0;
   
   //Recebe as propriedades da matriz e do vetor
   printf("Digite o número de linhas da matriz: ");
-  scanf("%d", &lin);
+  scanf("%i", &lin);
   printf("\nDigite o número de colunas da matriz: ");
-  scanf("%d", &col);
-  printf("\nO comprimento do vetor deve ser igual às colunas da matriz \n\n")
+  scanf("%i", &col);
+  printf("\nO comprimento do vetor deve ser igual às colunas da matriz \n\n");
   
   //Criação da matriz pela alocação dinâmica; ela é preenchida a medida que é criada
-  matriz=(int **)malloc(lin*sizeof(int*));
+  matriz=(float**)malloc(lin*sizeof(float*));
   printf("Digite os elementos da matriz: \n");
-  for (i=0;i<lin;i++)
-  {
-    matriz[i]=(int *)malloc(col*sizeof(int));
-    for (j=0;j<col;j++) scanf("%d", &matriz[i][j]);
+  
+  for (i=0;i<lin;i++){
+    matriz[i]=(float*)malloc(col*sizeof(float));
+    for (j=0;j<col;j++) scanf("%f", &matriz[i][j]);
     printf("\n"); //Pula linha para indicar ao usuário mudança de linha
   }
   
   //Criação do vetor, também preenchido a medida que é criado
-  vet=(int *)malloc(col*sizeof(int));
+  vet=(float*)malloc(col*sizeof(float));
   printf("\nDigite os elementos do vetor: \n");
-  for (i=0;i<col;i++) scanf("%d", &vet[i]);
+  for (i=0;i<col;i++) scanf("%f", &vet[i]);
   printf("\n");
   
   //Criação do vetor resultante
-  vet_final=(int *)malloc(lin*sizeof(inf));
-  for(i=0;i<lin;i++)
-  {
-    for(j=0;j<col;j++)
-    {
-      prod=matriz[i][j]*vet[j];
-      soma=soma+prod;
+  vet_final=(float *)malloc(lin*sizeof(float));
+  for(i=0;i<lin;i++){
+    for(j=0;j<col;j++){
+      
+      
+	  prod=matriz[i][j]*vet[j];
+      soma+=prod;
+      
+      
     }
-    vet_final[j]=soma;
-    printf("%d ", &vet_final[i]);//imprime o vetor a medida que é preenchido
+    vet_final[i] = soma;
+    printf("%.2f ", vet_final[i]);//imprime o vetor a medida que é preenchido
     soma=0;
   }
   printf("\n");
