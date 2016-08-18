@@ -4,6 +4,7 @@
   Matheus Obando
   Fabíola Maciel
   Helder Serra
+  Kauê Fontes
 
   8.  Dada uma matriz real  Amxn, verificar se existem elementos repetidos em A.
 
