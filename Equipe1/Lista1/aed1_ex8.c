@@ -18,7 +18,7 @@ int main()
     int numero_de_repeticoes = 0;
 
     //entrada de dados
-    printf("- O produto de uma matriz de tamanho mxn com um vetro de tamanho n - \n");
+    printf("- O produto de uma matriz de tamanho mxn com um vetor de tamanho n - \n");
     printf("Informe o numero de linhas da matriz: \n");
     scanf("%d",&linhas);
     printf("Informe o numero de colunas da matriz: \n");
