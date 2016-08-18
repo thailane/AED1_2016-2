@@ -42,7 +42,8 @@ int main()
     {
         printf("Há elementos repetidos na matriz\n");
     }	
-    else{    
+    else
+    {    
         printf("Não há elementos repetidos na matriz\n");
     }
 	return 0;
