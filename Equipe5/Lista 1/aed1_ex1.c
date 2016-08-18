@@ -1,5 +1,8 @@
 /*
-Lucas Almeida da Silva
+Aline Lima
+Amanda Leticia
+Eduardo Azevedo
+Lucas Almeida
 */
 #include <stdio.h>
 int main ()

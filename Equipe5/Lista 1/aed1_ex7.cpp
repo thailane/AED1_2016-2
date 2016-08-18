@@ -1,9 +1,13 @@
 /*
-Lucas Almeida da Silva
-*/
+Aline Lima
+Amanda Leticia
+Eduardo Azevedo
+Lucas Almeida
+*/ 
 #include <stdio.h>
 
-main() {
+main() 
+{
   
   int i1, j1, i2=1, j2, i, j, k, m1[50][50], m2[50][50], m3[50][50];
     
@@ -13,16 +17,16 @@ main() {
   scanf("%d", &i1);
   printf("Digite o numero de colunas..: ");
   scanf("%d", &j1);
-  /*printf("\nMatriz 2\n==========\n");
-  printf("\nDigite o numero de linhas...: ");
-  scanf("%d", &i2);
-  printf("Digite o numero de colunas..: ");
-  scanf("%d", &j2);*/
+
   j2=i1;
-  if (i1 == j2) {
+  
+  if (i1 == j2) 
+  {
     printf("\nValores da Matriz 1\n=====================\n\n");
-    for (i=0; i<i1; i++) {
-      for(j=0; j<j1; j++) {
+    for (i=0; i<i1; i++) 
+	{
+      for(j=0; j<j1; j++) 
+	  {
         printf("Digite um valor para [%d][%d].: ", (i+1), (j+1));
         scanf("%d", &m1[i][j]);
 
@@ -31,8 +35,10 @@ main() {
     }
 
     printf("\nValores do Vetor\n=====================\n\n");
-    for (i=0; i<i2; i++) {
-      for (j=0; j<j2; j++) {
+    for (i=0; i<i2; i++) 
+	{
+      for (j=0; j<j2; j++) 
+	  {
         printf("Digite um valor para [%d]: ", (j+1));
         scanf("%d", &m2[i][j]); 
 
@@ -40,9 +46,12 @@ main() {
 
     }
 
-    for (i=0;i<i1; i++) {
-      for (j=0; j<i1; j++) {
-        for (k=0; k<j1; k++) {
+    for (i=0;i<i1; i++) 
+	{
+      for (j=0; j<i1; j++) 
+	  {
+        for (k=0; k<j1; k++) 
+		{
           m3[i][j] = m3[i][j] + (m1[i][k] * m2[k][j]); 
 
         }
@@ -53,8 +62,10 @@ main() {
 
     printf("\nMatriz 3\n=====================\n\n");
 
-    for (i=0; i<i1; i++) {
-      for (j=0; j<j2; j++) {
+    for (i=0; i<i1; i++) 
+	{
+      for (j=0; j<j2; j++) 
+	  {
         printf("%d ", m3[i][j]);
 
       }
@@ -67,7 +78,8 @@ main() {
 
   }
 
-  else {
+  else 
+  {
       printf("\nErro! Impossivel multiplicar as matrizes informadas.\n");
 
     }
