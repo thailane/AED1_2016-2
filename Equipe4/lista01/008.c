@@ -3,6 +3,7 @@
   Jefferson Avilar
   Matheus Obando
   Fabíola Maciel
+  Helder Serra
 
   8.  Dada uma matriz real  Amxn, verificar se existem elementos repetidos em A.
 
