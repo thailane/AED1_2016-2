@@ -1,9 +1,18 @@
+/* equipe:
+    Fabiana Bezerra
+    Paulo Roberto
+    Paulo Silveira
+    Pedro Sena
+    
+*/    
+
 #include<stdio.h>
 #include<stdlib.h>
 
 #define MAX 50
 
-int main(){
+int main()
+{
     float **matrx = (float**) malloc (sizeof(float*) * MAX);
     int i,j;
     for(i=0;i<MAX;i++){
