@@ -7,7 +7,8 @@ Stephanny Barreto
 */
 #include<stdio.h>
 
-int main(){
+int main()
+{
     int i, l, c, j, acm;
 
     printf("linhas: \n");
@@ -20,8 +21,10 @@ int main(){
     
 
     printf("Valores da matriz: \n");
-    for(i=0; i<l;i++){
-        for(j=0; j<c;j++){
+    for(i=0; i<l;i++)
+    {
+        for(j=0; j<c;j++)
+        {
             scanf("%d", &valor);
             matriz[i][j] = valor;
             valor = 0;        
@@ -29,21 +32,25 @@ int main(){
     }
 
     printf("Valores do vetor: \n");
-    for(j=0; j<c;j++){
+    for(j=0; j<c;j++)
+    {
         scanf("%d", &valor);
         vetor[j] = valor;
         valor = 0;    
     }
     
-    for(i=0; i<l;i++){
-        for(j=0;j<c; j++){
+    for(i=0; i<l;i++)
+    {
+        for(j=0;j<c; j++)
+        {
             acm = acm+(vetor[j] * matriz[i][j]);
         }            
         resultado[i][1] = acm;    
         acm = 0;
     }
     printf("Resultado: \n");
-    for(j=0; j<l;j++){
+    for(j=0; j<l;j++)
+    {
         printf("%d\n", resultado[j][1]);        
     }        
 
