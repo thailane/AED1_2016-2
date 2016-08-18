@@ -8,7 +8,8 @@ Stephanny Barreto
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void){
+int main(void)
+{
 	int *v;
 	int num;
 	int i, k, aux;
@@ -37,5 +38,5 @@ int main(void){
 	{
 		printf("\nValor de V[%d] = %d",i, v[i]);
 	}
-	return (1);
+	return 1;
 }
