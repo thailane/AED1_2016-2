@@ -3,6 +3,7 @@
   Jefferson Avilar
   Matheus Obando
   Fabíola Maciel
+  Helder Serra
 
   6. Imprimir as n primeiras linhas do triângulo de Pascal
 
