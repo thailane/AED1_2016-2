@@ -53,7 +53,7 @@ int main()
   if (T == NULL) 
   {
     printf("Erow\n");
-    return(-1);
+    return -1;
   }
   
   for (i = 0; i < n; i++) 
@@ -62,17 +62,17 @@ int main()
     
     if (T[i] == NULL) {
       printf("Erow\n");
-      return(-1);
+      return -1;
     }
   }
 
   if (n <= 0) 
   {
-    return(1);
+    return 1;
   }
 
   preencher(n,T);
   imprimir(n,T);
 
-  return(0);
+  return 0;
 }
