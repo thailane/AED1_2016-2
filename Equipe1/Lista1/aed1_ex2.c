@@ -1,4 +1,4 @@
-/* equipe 01:
+﻿/* equipe 01:
 	Diogo Abreu
 	Fernando Calderaro
 	Leticia Mota
@@ -9,7 +9,7 @@
 	
 	Faça um programa usando ponteiros, para ordenar 5 números e mostrá­-los ordenados na tela.
 
-	*/
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
