@@ -28,24 +28,29 @@ int main () {
 	printf("Digite o tamanho da sequência: ");
 	scanf("%d", &n);
 	printf("Digite os %d números reais da sequência: ", n);
+	
 	for (i=0; i<n; i++)
 	{
 		scanf("%f", &vet[i]);
 	}
 
+	//verifica o número de vezes que cada número ocorre e imprime
 	for (i=0; i<n; i++)
 	{
 		vezes = 1;
 		j = i + 1;
-	while (j < n)
-		if (vet[j] != vet[i])
-			j++;
-		else
+		while (j < n)
 		{
-			vezes++;
-			n--;
-			vet[j] = vet[n];
+			if (vet[j] != vet[i])
+				j++;
+			else
+			{
+				vezes++;
+				n--;
+				vet[j] = vet[n];
+			}
 		}
+
 		if (vezes == 1)
 			printf("%.2f ocorre %d vez\n", vet[i], vezes);
 		else
