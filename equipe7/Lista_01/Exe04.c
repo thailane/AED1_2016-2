@@ -16,8 +16,8 @@ int main(void)
 	int n, i, cont=0;
 
 	scanf("%d", &n);
-	x = (int*)calloc(n,sizeof(int));
-	y = (int*)calloc(n,sizeof(int));
+	x = (int*)malloc(n*sizeof(int));
+	y = (int*)malloc(n*sizeof(int));
 
 	for(i=0; i<n; i++){
 	    scanf("%d", &x[i]);
