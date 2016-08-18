@@ -37,7 +37,7 @@ int main () {
 
 	for (i=0; i<n; i++)
 	{
-		produtoe = produtoe + vetx[i] * vety[i]; //cálculo do produto escalar
+		produtoe = produtoe + vet_x[i] * vet_y[i]; //cálculo do produto escalar
 	}
 
 	printf("O produto escalar desses vetores é %.2f", produtoe);
