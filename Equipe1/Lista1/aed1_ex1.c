@@ -1,5 +1,5 @@
 /* equipe 01:
-	Diogo Abreu
+	Diogo Abreu da silva
 	Fernando Calderaro
 	Leticia Mota
 	Rodrigo Oliveira
@@ -7,15 +7,22 @@
 	
 	exercicio 01
 
-	Reescreva o programa abaixo usando ponteiros	 	
-	int main ()	
+	Reescreva o programa abaixo usando ponteiros
+	 
+	
+	int main ()
+	
 	{
-	float matrx [50][50]; 
+
+	float matrx [50][50]; 
 	int i,j;
-	for (i=0;i<50;i++)
-			for (j=0;j<50;j++) 
+
+	for (i=0;i<50;i++)
+		
+	for (j=0;j<50;j++) 
 			matrx[i][j]=0.0;
-			return(0);
+
+			return(0);
 	
 	}
 		
