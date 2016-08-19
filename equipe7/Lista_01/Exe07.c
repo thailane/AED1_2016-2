@@ -28,7 +28,8 @@ int main ()
   matriz=(float**)malloc(lin*sizeof(float*));
   printf("Digite os elementos da matriz: \n");
   
-  for (i=0;i<lin;i++){
+  for (i=0;i<lin;i++)
+  {
     matriz[i]=(float*)malloc(col*sizeof(float));
     for (j=0;j<col;j++) scanf("%f", &matriz[i][j]);
     printf("\n"); //Pula linha para indicar ao usuário mudança de linha
@@ -42,8 +43,10 @@ int main ()
   
   //Criação do vetor resultante
   vet_final=(float *)malloc(lin*sizeof(float));
-  for(i=0;i<lin;i++){
-    for(j=0;j<col;j++){
+  for(i=0;i<lin;i++)
+  {
+    for(j=0;j<col;j++)
+    {
     	
 	prod=matriz[i][j]*vet[j];
 	soma+=prod;
