@@ -1,0 +1,55 @@
+/*Equipe 4:
+
+  Matheus Obando
+  Fabíola Maciel
+  Jefferson Avilar
+  Helder Serra
+  Kauê Fontes
+
+  2. Faça um programa usando ponteiros, para ordenar 5 números e mostrá­-los ordenados na tela.*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+#define tam 5
+
+int main()
+{
+
+  int *vetor;
+  int i,j;
+  int aux;
+
+  vetor=(int*)calloc(tam,sizeof(int));
+
+  // Adiciona velores as determinadas posições no vetor
+  for (i=0;i<tam;i++){
+    printf("Digite o elemento %d: ",i+1);
+    scanf("%d",&vetor[i]);
+    printf("\n");
+  }
+
+  // Imprime o vetor 
+  for (i=0;i<tam;i++){
+    printf("%d",vetor[i]);
+  }
+
+  printf("\n");
+
+  // Ordenação usando Bubble Sort
+  for (i=(tam-1);i>0;i--){
+    for (j=0;j<i;j++){
+      if(vetor[j]>vetor[j+1]){
+        aux=vetor[j];
+        vetor[j]=vetor[j+1];
+        vetor[j+1]=aux;
+			}
+		}
+  }
+
+  for (i=0;i<tam;i++){
+    printf("%d",vetor[i]);
+  }
+
+  return 0;
+}
