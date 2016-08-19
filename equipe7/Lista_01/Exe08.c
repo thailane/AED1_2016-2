@@ -11,7 +11,8 @@
 #include<stdlib.h>
 #define MAX 50
 
-int comparador(const void *val1, const void *val2){
+int comparador(const void *val1, const void *val2)
+{
 	if ( *(int*)val1 < *(int*)val2 ) return -1;
 	if ( *(int*)val1 > *(int*)val2 ) return 1;
 	return 0;
@@ -36,9 +37,11 @@ int main()
 	a = (float**) malloc (sizeof(float*) * linhas);
 	
     printf("Digite os elementos da matriz: ");
-    for(i = 0; i < linhas; i++){
+    for(i = 0; i < linhas; i++)
+    {
     	a[i] = (float*) malloc (sizeof(float) * colunas);
-        for(j = 0; j < colunas; j++){
+        for(j = 0; j < colunas; j++)
+        {
         	scanf("%f", &a[i][j]);
         	vetor[pos++] = a[i][j];
 		}
