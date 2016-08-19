@@ -14,7 +14,8 @@
 int main()
 {
 	float *sequencia, *ordenado;
-	int n, i, j, fim=0, k, *vezes;
+	int n, i, j, fim, k, *vezes;
+	fim=0;
 
 	scanf("%i", &n);
 
