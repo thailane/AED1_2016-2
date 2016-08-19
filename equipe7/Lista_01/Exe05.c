@@ -25,19 +25,23 @@ int main()
 
 	for(i=0; i<n; i++) scanf("%f", &sequencia[i]);
 
-	for(i=0; i<n; i++){
+	for(i=0; i<n; i++)
+	{
 	    //Verifica se esse valor é a primeira vez que aparece na sequência
-	    for(j=i-1; j>=0; j--){
+	    for(j=i-1; j>=0; j--)
+	    {
 	        if(sequencia[j] == sequencia[i]) {
 	            break;
-	        }
 	    }
+	}
 	    //Se for, adiciona ele no vetor ordenado e conta quantos tem depois dele e coloca no vezes
 	    if(j<0){
 	        ordenado[fim] = sequencia[i];
 	        vezes[fim] = 1;
-	        for(j=i+1; j<n; j++){
-	            if(sequencia[j] == ordenado[fim]){
+	        for(j=i+1; j<n; j++)
+	        {
+	            if(sequencia[j] == ordenado[fim])
+	            {
 	                vezes[fim]++;
 	            }
 	        }
@@ -46,13 +50,15 @@ int main()
 	}
 
 	printf("Sequência: ");
-	for(i=0; i<n-1; i++){
+	for(i=0; i<n-1; i++)
+	{
 	    printf("%.1f, ", sequencia[i]);
 	}
 	printf("%.1f\n", sequencia[i]);
 
 	printf("Frequências:  ");
-	for(i=0; i<fim; i++){
+	for(i=0; i<fim; i++)
+	{
 	    printf("%.1f aparece %d vez(es)\n", ordenado[i], vezes[i]);
 	}
 
