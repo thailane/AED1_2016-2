@@ -30,10 +30,8 @@ int main()
 	    //Verifica se esse valor é a primeira vez que aparece na sequência
 	    for(j=i-1; j>=0; j--)
 	    {
-	        if(sequencia[j] == sequencia[i]) {
-	            break;
-	    }
-	}
+	        if(sequencia[j] == sequencia[i]) break;
+        }
 	    //Se for, adiciona ele no vetor ordenado e conta quantos tem depois dele e coloca no vezes
 	    if(j<0){
 	        ordenado[fim] = sequencia[i];
